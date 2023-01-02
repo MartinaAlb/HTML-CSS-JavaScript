@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cviceni1</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        .nadpis2 {
+            color: orange;
+        }
+
+        ul ul li{
+            color: red;
+        }
+
+        #tabulka th{
+            color: violet;
+        }
+        p {
+            color: grey;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <ul>
+
+        <li><a href="Uvod.pdf">Uvod do HTML</a></li>
+        <li><a href="lists.html">Cviceni - seznamy HTML</a></li>
+        <li><a
+                href="https://sdacademy.cz/kurzy/?utm_source=google&utm_medium=cpc&utm_campaign=search&utm_term=brand&utm_content=course&gclid=CjwKCAjwtp2bBhAGEiwAOZZTuEh612DzreP4kT4Jlqbi9H502dyDLte13AabPxvzAMAbKxV1Xc5QHxoC1McQAvD_BwE">Kuryz
+                SDA</a></li>
+
+
+    </ul>
+
+
+    <br />
+
+    <img src="https://sdacademy.cz/sda-assets/uploads/sites/7/2021/09/og-image.png" alt="Logo SDA" width="450">
+
+    <hr />
+
+    <h1>Cvičení na⁠ párové HTML značky</h1>
+    Tato hodina byla <b>skvělá</b> a <u>hodně nového</u> jsem se toho naučil! V této praktické části výuky si procvičím
+    tvorbu webové stránky, ve které použiji snad všechny značky, které jsem se doposud naučil.
+    <h2>Shrnutí značek</h2>
+    <ul>
+        <li>Značce se anglicky říkat tag a rozdělujeme je na párové a nepárové</li>
+        <li>Seznamy se nejčastěji používají jako seřazené nebo neseřazené</li>
+        <li>Dále jsem se naučil:
+            <ul>
+                <li>Tučné písmo značí značka <b>b</b> - anglicky <b>bold</b></li>
+                <li>Podtržené písmo značí značka <b>u</b> - anglicky <b>u</b>nderline<u></u></li>
+                <li>Zkosené písmo značí značka <b>i</b> - anglicky <b>i</b><i>talic</i></li>
+                <li>Odstavce značí značka <b>p</b> - anglicky <b>p</b>aragraph</li>
+                <li>Dále také vím, že značky by se neměly křížit - i když prohlížeč dělá, co může a snaží se to napravit
+                </li>
+            </ul>
+        </li>
+        <li><del>ALE TO JEŠTĚ NENÍ VŠE!</del></li>
+    </ul>
+
+    <h2 class="nadpis2">Tabulky</h2>
+    <table id="tabulka">
+        <tr>
+            <th>Jméno</th>
+            <th>Příjmení</th>
+            <th>Věk</th>
+            <th>Bydliště</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>42</td>
+            <td><u>Mars</u></td>
+        </tr>
+        <tr>
+            <td>Pepa</td>
+            <td>Novák</td>
+            <td>19</td>
+            <td><u>Brno</u></td>
+        </tr>
+        <tr>
+            <td>Jindřiška</td>
+            <td>Nevrkalová</td>
+            <td>35</td>
+            <td><u>Praha</u></td>
+        </tr>
+    </table>
+
+
+    <h2 class="nadpis2">Nadpisy</h2>
+    <p>Celkem máme 6 úrovní nadpisu, kde 1. úroveň je největší a nejdůležitější, zatímco 6. úroveň nadpisů má velikost
+        písma menší než samotný text na stránce.</p>
+    <p>Pod nadpisy se mohou objevit například odstavce, jako například tento, které například popisují obsah dané
+        sekce/kapitoly.</p>
+
+    <h2 class="nadpis2">Takřka povinné prvky stránky</h2>
+    <ol>
+        <li>deklarace <b><i>!DOCTYPE html</i></b>, která musí být v <i>.html</i> souboru jako první</li>
+        <li>značka <b>html</b>, která následuje hned po deklaraci a obsahuje všechny ostatní značky</li>
+        <li>značka <b>head</b>, která obsahuje titulek stránky v párové značce <b>title</b></li>
+        <li>značka <b>body</b>, která obsahuje obsah stránky, který vidí uživatelé</li>
+    </ol>
+
+
+
+
+
+    <h1>Bonusové cvičení – HTML entity</h1>
+    Pokud potřebuji, aby webová stránka pouze zobrazila, ALE NEPOUŽILA, značku, např. &lt;b&gt;tučný text&lt;/b&gt;. Je
+    nutné
+    špičaté závorky zapsat pomocí tzv. HTML entit, protože <u>špičaté značky jsou v HTML speciální znaky</u>.
+    <ul>
+        <li>Otevírací špičatá &lt; závorka se zapíše jako: <b>&amp;lt;</b>
+
+            <ul>
+                <li><b>lt</b>je opět akronym z anglických slov <b>l</b>ess <b>t</b>han</li>
+            </ul>
+
+        </li>
+        <li>Uzavírací špičatá &gt; závorka se zapíše jako: <b>&amp;gt;</b>
+            <ul>
+
+                <li><b>gt</b> je opět akronym z anglických slov <b>g</b>reater <b>t</b>han</li>
+            </ul>
+        </li>
+        <li>Výsledek pak vypadá: <b>&lt;b&gt;tučný text&lt;/b&gt;</b></li>
+    </ul>
+
+
+    <p>
+        <b>Takto překřížené značky jsou špatně:</b>&lt;b&gt;překřížené&lt;i&gt;načky&lt;/b&gt;jsou špatné&lt;/i&gt;
+    </p>
+
+</body>
+
+</html>
