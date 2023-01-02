@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cviceni-obrazek</title>
+    <style>
+        .obsah {
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+            filter: contrast(50%) blur(1px);
+
+        }
+
+        p {
+            color: pink;
+            font-size:larger;
+            font-weight: bolder;
+        }
+
+        #vlevod {
+            position: absolute;
+            left: 0%;
+            bottom: 0%;
+            z-index: 1;
+            margin-bottom: 0px;
+        }
+
+        #vlevon {
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            z-index: 1;
+            margin-top: 0px;
+        }
+
+        #vpravod {
+            position: absolute;
+            right: 0%;
+            bottom: 0%;
+            z-index: 1;
+            margin-bottom: 0px;
+        }
+
+        #vpravon {
+            position: absolute;
+            right: 0%;
+            top: 0%;
+            z-index: 1;
+            margin-top: 0px;
+        }
+
+        #u {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="obsah">
+        <img src="https://www.w3schools.com/css/img_5terre_wide.jpg" alt=Cinque-Terre-National-Park />
+        <p id="vlevod">Vlevo dole</p>
+        <p id="vlevon">Vlevo nahore</p>
+        <p id="u">Uprostred</p>
+        <p id="vpravod">Vpravo dole</p>
+        <p id="vpravon">Vpravo nahore</p>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!-- task to practice imput from user, console log and some basic fixures
+only in czech
+language HTML -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <Cviceni duchodovy vek lepe>
+    </title>
+</head>
+
+<body>
+
+    <script>
+        console.log("Jak jsi na tom s duchodem?")
+        const nactenyText = prompt("Zadej svuj rok narozeni");
+
+    </script>
+
+    <script>
+
+        if (Number(nactenyText) == NaN) {
+            console.log("Zdá se, že jsi nezadal rok narození, ted nezjistis, zda uz jsi v duchodovem veku ci ne");
+        }
+
+        const rokNarozeni = Number(nactenyText);
+
+        console.log("Jako rok svého narození jsi zadal:", rokNarozeni);
+        
+        const today = new Date();
+        const aktualniRok = today.getFullYear();
+
+        if ((aktualniRok - 65) >= (rokNarozeni)) {
+            console.log("Gratulujeme, jsi v duchodovem veku");
+
+        }
+        else if (rokNarozeni > aktualniRok) {
+            console.log("Není možné, že by ses ještě nenarodil");
+        }
+        else {
+            console.log("Ještě jsi mladý, ještě chvíli pracuj, než budeš v důchodovém věku");
+        }
+
+    </script>
+</body>
+
+</html>
